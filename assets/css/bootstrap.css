@@ -22,6 +22,10 @@
   flex: 1;
   background: url("../../assets/img/backgroundCarousel.jpeg") no-repeat center;
   background-size: cover;
+  opacity: 0.6;
+}
+#perfil_backgroung img {
+  opacity: 10000;
 }
 
 #contact-form {
