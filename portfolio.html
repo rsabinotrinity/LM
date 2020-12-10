@@ -8,6 +8,8 @@
   <meta name="description" content="Clean responsive bootstrap website template">
   <meta name="author" content="">
   <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/stylePortfolio.css">
+
   <link href="assets/css/bootstrap.css" rel="stylesheet">
   <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
   <link href="assets/css/docs.css" rel="stylesheet">
@@ -85,7 +87,7 @@
                         <a href="index.html">Início</a>
                       </li>
                       <li class="dropdown active">
-                        <a href="#">Projetos</a>
+                        <a href="/">Projetos</a>
                         <ul class="dropdown-menu">
                           <li><a href="projeto1.html" style="color: brown;">Cursos livres</a></li>
                           <li><a href="projeto2.html">Pós-graduação | Fitoterapia</a></li>
@@ -113,24 +115,23 @@
                       </ul>
                     </li>
                     <li class="dropdown active">
-                      <a href="./ContactForm.html">Contato</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
-                        <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
-                        <li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
-                        <li><a href="portfolio-detail.html">Portfolio detail</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown active">
-                      <a href="./portfolio.html">Portfólio</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
-                        <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
-                        <li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
-                        <li><a href="portfolio-detail.html">Portfolio detail</a></li>
-                      </ul>
-                    </li>
-                  
+                        <a href="./ContactForm.html">Contato</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
+                          <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
+                          <li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
+                          <li><a href="portfolio-detail.html">Portfolio detail</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown active">
+                        <a href="./portfolio.html">Portfólio</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
+                          <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
+                          <li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
+                          <li><a href="portfolio-detail.html">Portfolio detail</a></li>
+                        </ul>
+                      </li>
                   </nav>
                 </div>
               </div>
@@ -143,95 +144,62 @@
     </div>
   </header>
   <section id="intro">
-
-    <section id="maincontent">
-      <div class="container">
-
-      <div class="row" >
-  
-        <div class="col-sm-8 col-lg-offset-2">
-  
-          <h1>Fale Conosco</h1>
-  
-          <form id="contact-form" method="post" action="contato.php" role="form">
-  
-            <div class="messages"></div>
-  
-            <div class="controls" style="display: grid; grid-template-columns: auto min-content;">
-  
-              <div class="row" >
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="form_name">Nome</label>
-                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Coloque seu nome"
-                      required="required" data-error="Nome obrigatório.">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group" style="margin: -10px;">
-                      <label for="form_email">Email</label>
-                      <input id="form_email" type="email" name="email" class="form-control"
-                        placeholder="Coloque seu e-mail" required="required"
-                        data-error="Um e-mail válido é obrigatório.">
-                      <div class="help-block with-errors"></div>
+    
+    <div class="container" >
+      
+        
+            <h1>Sobre</h1>
+            
+            <!-- <ul id="menu">
+                <li><a href="cv-resumido.html">Resumido</a></li>
+                <li class="ativo">Completo</li>
+            </ul> -->
+            
+            <div class="secao">
+                <h2>Dados</h2>			
+                    <div id="hcard-Ademir-Mazer-Jr" class="vcard">
+                      <img src="./assets/img/slides/refine/lm1.png" alt="leandro medeiros" style="width: 300px;" class="photo"/>
+                     <span class="given-name">Leandro</span>
+                      <span class="additional-name">Medeiros</span>
+                      <span class="family-name"></span>
+    
+                     <a class="email" href="mailto:leandromedeiros@gmail.com">Leandromedeiros@gmail.com</a>
+                     <a class="url" href="">http://algumacoisa.com.br</a>
+                    
+                    <div class="adr">
+                      <span class="locality">Recife</span>
+                    , 
+                      <span class="region">Pernambuco</span>
+    
+                     </div>
                     </div>
-                  </div>
-              </div>
-             
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="form_phone">Fone</label>
-                    <input id="form_phone" type="tel" name="phone" class="form-control"
-                      placeholder="Coloque seu telefone">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="form_message">Mensagem</label>
-                    <textarea id="form_message" name="message" class="form-control"
-                      placeholder="Coloque a mensagem aqui" rows="4" required="required"
-                      data-error="Por favor,escreva-nos sua opinião."></textarea>
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-  
-                <div class="col-md-6" >
-                  <div class="form-group">
-                    <!-- https://www.google.com/recaptcha/about/ -->
-                    <form action="?" method="POST">
-                      <div class="g-recaptcha" data-sitekey="6Ld08PoZAAAAABGILcCCmcbfHTXY2naqlvo6pPr3"></div>
-                      <br/>
-                    </form>
-                </div>
-                <script type="text/javascript">
-                
-                </script>
-                <!-- <a href="mailto:?subject=Assunto do email&amp;body=Olá,%0D%0A%0D%0A[corpo do email]%0D%0A%0D%0AAtenciosamente,%0D%0A[nome do usuário]">Envie seu email!</a> -->
-  
-                <div class="col-md-12">
-                  <button class="btn btn-success btn-send" 
-                  href="mailto:someone@example.com"
-                  type="submit">Enviar mensagem</button>
-                </div>
-              </div>
-              
             </div>
-  
-          </form>
-  
-        </div><!-- /.8 -->
-  
-      </div> <!-- /.row-->
-    </div> <!-- /.container-->
+    
+            <div class="secao">
+                <h2>Carreira</h2>
+                
+                <p>Farmacêutico pela Universidade Federal de Pernambuco(UFPE)</p>
+                <p>Mestre em Inovação Terapêutica(UFPE).</p>
+                <p>Especialista em Fitoterapia pela Faculdade do Centro-Oeste Paulista.</p>
+                <p>coordenador do curso de bacharelado em farmácia e da Liga Acadêmica de Fitoterapia Médica
+                    da Universidade Católica de Pernambuco(UNICAP), onde também leciona disciplinas relativas à farmacologia
+                    nos cursos de medicina, enfermagem e fisioterapia.</p>
+                <p>Presidente da Regional Nordeste da Associação Brasileira de Fitoterapia e membro do Grupo de Trabalho em
+                        Suplementos Alimentares pelo Conselho Federal de Farmácia.</p>
+            </div>
+    
+        
+
   </section>
+  
+
+
+
+
+
   <!-- Footer
  ================================================== -->
-  <footer class="footer" style="background-color: white; color: black; bottom: 0;">
+  <footer class="footer" style="background-color: white; color: black;">
     <div class="container">
       <div class="row">
         <div class="span3">
